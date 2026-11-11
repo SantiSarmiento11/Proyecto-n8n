@@ -47,3 +47,27 @@ flowchart TD
     J -->|GET Consulta Estado| E
     E --> J
 ```
+
+### Estructura de Directorios
+
+```text
+Proyecto-n8n/
+├── Workflow.json            # Definicion declarativa exportable del flujo automatizado en n8n
+├── index.html               # Pagina de inicio y bienvenida al centro de reporte
+├── reporte.html             # Interfaz de captura de incidente con mapa interactivo
+├── seguimiento.html         # Portal de consulta de estado por codigo de radicado
+├── README.md                # Documentacion tecnica de ingenieria
+├── css/
+│   └── styles.css           # Diseno visual responsivo, estilos de mapa y tarjetas de estado
+└── js/
+    ├── app.js               # Coordinador general de la aplicacion
+    ├── config.js            # Configuracion central de endpoints y webhooks n8n
+    └── app/
+        ├── api.js           # Cliente HTTP asincrono (Fetch API)
+        ├── dom.js           # Manipulacion segura y reactiva de elementos del DOM
+        ├── map.js           # Inicializacion y marcadores cartograficos con Leaflet
+        ├── navigation.js    # Logica de enrutamiento y cambio de vistas
+        ├── report.js        # Logica del formulario de radicación de incidentes
+        ├── tracking.js      # Consulta y renderizado de la linea de tiempo de seguimiento
+        └── utils.js         # Funciones auxiliares de formateo y validacion
+```
