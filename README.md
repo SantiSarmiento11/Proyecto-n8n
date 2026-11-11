@@ -118,3 +118,16 @@ export const CONFIG = {
   MAP_DEFAULT_ZOOM: 14
 };
 ```
+
+## Guia de Instalacion y Despliegue Local
+
+1. Clonar el repositorio:
+```bash
+git clone https://github.com/SantiSarmiento11/Proyecto-n8n.git
+cd Proyecto-n8n
+```
+
+2. Levantar una instancia local de n8n mediante Docker:
+```bash
+docker run -it --rm --name n8n -p 5678:5678 -v ~/.n8n:/home/node/.n8n n8nio/n8n
+```
