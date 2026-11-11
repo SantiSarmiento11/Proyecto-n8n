@@ -224,3 +224,8 @@ Cada ejecucion se almacena en la base de datos de auditoria de n8n (`Executions`
 
 - **Servicio n8n**: Alojado en servidor VPS con Docker Compose, certificado Let's Encrypt y base de datos PostgreSQL dedicada.
 - **Cliente Web**: Servido a traves de GitHub Pages o CDN segura con protocolo HTTPS obligatorio para habilitar la API de geolocalizacion del navegador.
+
+## Optimizacion de Rendimiento
+
+- Modulo de Leaflet cargado de forma asincrona para acelerar el primer renderizado visual.
+- Uso de teselas cacheadas del mapa para minimizar el consumo de datos moviles de los usuarios en terreno.
