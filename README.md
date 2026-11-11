@@ -75,3 +75,9 @@ Proyecto-n8n/
 ## Stack Tecnologico
 
 Construido combinando la flexibilidad de JavaScript del lado del cliente con el poder de orquestacion de n8n.
+
+### Orquestacion Backend y Automatizacion
+
+- ![n8n](https://img.shields.io/badge/n8n_Automation-EA4B71?style=for-the-badge&logo=n8n&logoColor=white) Motor de flujos de trabajo basado en nodos para integracion de servicios y datos.
+- ![JSON Webhooks](https://img.shields.io/badge/REST_Webhooks-02569B?style=for-the-badge&logo=postman&logoColor=white) Mecanismo asincrono de recepcion y respuesta de peticiones HTTP.
+- ![JSON](https://img.shields.io/badge/JSON_Payloads-000000?style=for-the-badge&logo=json&logoColor=white) Formato de serializacion para envio de coordenadas e informacion de incidencias.
