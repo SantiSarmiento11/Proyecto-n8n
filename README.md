@@ -219,3 +219,8 @@ Cada ejecucion se almacena en la base de datos de auditoria de n8n (`Executions`
 
 - Se recomienda activar autenticacion por Header Secret o Basic Auth en los nodos Webhook de n8n para prevenir recepcion de spam no autenticado.
 - Validacion de coordenadas dentro del rango geografico valido de la ciudad o jurisdiccion de operacion.
+
+## Despliegue en Produccion
+
+- **Servicio n8n**: Alojado en servidor VPS con Docker Compose, certificado Let's Encrypt y base de datos PostgreSQL dedicada.
+- **Cliente Web**: Servido a traves de GitHub Pages o CDN segura con protocolo HTTPS obligatorio para habilitar la API de geolocalizacion del navegador.
