@@ -95,3 +95,13 @@ Construido combinando la flexibilidad de JavaScript del lado del cliente con el 
 - **OpenStreetMap Tile Layer**: Cartografia satelital y urbana de libre uso sin cuotas de facturacion.
 - **Browser Geolocation API**: Solicitud de coordenadas directas mediante antena GPS del dispositivo movil o red Wi-Fi.
 - **SMTP Email Service (n8n Node)**: Envio instantaneo de confirmacion de radicacion al usuario informante.
+
+## Requisitos Previos del Sistema
+
+- Instancia activa de n8n (instalacion local via Docker, npm o cuenta n8n Cloud):
+  - Version minima recomendada: n8n 1.0+
+- Navegador web moderno con soporte para HTTPS (requerido para permisos de geolocalizacion):
+  - Google Chrome 85+
+  - Firefox 80+
+  - Safari 14+
+- Servidor HTTP estatico para servir la interfaz web.
