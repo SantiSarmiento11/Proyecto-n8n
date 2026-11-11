@@ -131,3 +131,10 @@ cd Proyecto-n8n
 ```bash
 docker run -it --rm --name n8n -p 5678:5678 -v ~/.n8n:/home/node/.n8n n8nio/n8n
 ```
+
+### Importacion del Flujo en n8n
+
+1. Abrir la consola de n8n en `http://localhost:5678`.
+2. Seleccionar la opcion **Workflows** -> **Import from File**.
+3. Seleccionar el archivo `Workflow.json` del repositorio.
+4. Activar el flujo (toggle a estado **Active**) y copiar las URLs de Webhook de produccion en `js/config.js`.
