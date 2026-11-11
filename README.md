@@ -214,3 +214,8 @@ curl -X POST http://localhost:5678/webhook/crear-reporte \
 ## Registro de Ejecuciones en n8n
 
 Cada ejecucion se almacena en la base de datos de auditoria de n8n (`Executions`), permitiendo inspeccionar la entrada, salida y tiempo de procesamiento exacto de cada nodo para analisis forense y monitoreo continuo.
+
+## Consideraciones de Seguridad
+
+- Se recomienda activar autenticacion por Header Secret o Basic Auth en los nodos Webhook de n8n para prevenir recepcion de spam no autenticado.
+- Validacion de coordenadas dentro del rango geografico valido de la ciudad o jurisdiccion de operacion.
