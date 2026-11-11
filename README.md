@@ -105,3 +105,16 @@ Construido combinando la flexibilidad de JavaScript del lado del cliente con el 
   - Firefox 80+
   - Safari 14+
 - Servidor HTTP estatico para servir la interfaz web.
+
+### Configuracion del Cliente Web (`js/config.js`)
+
+El archivo `js/config.js` contiene los enlaces a los endpoints de n8n:
+
+```javascript
+export const CONFIG = {
+  N8N_WEBHOOK_REPORT: "http://localhost:5678/webhook/crear-reporte",
+  N8N_WEBHOOK_TRACKING: "http://localhost:5678/webhook/consultar-reporte",
+  MAP_DEFAULT_CENTER: [7.1193, -73.1227], // Coordenadas iniciales (ej. Bucaramanga)
+  MAP_DEFAULT_ZOOM: 14
+};
+```
