@@ -11,3 +11,11 @@ Sistema integral para la captura, cartografia interactiva, gestion de radicados 
 ## Resumen Ejecutivo
 
 La gestion eficiente de incidencias en espacios urbanos e instalaciones corporativas suele retrasarse debido a la ausencia de geolocalizacion precisa y a la falta de trazabilidad en tiempo real. GeoReport n8n resuelve este cuello de botella conectando una aplicacion web interactiva orientada a mapas con un motor de automatizacion de flujos de trabajo en n8n, permitiendo que cada reporte ciudadano sea radicado, clasificado y canalizado hacia los equipos de resolucion en cuestion de segundos.
+
+## Alcance y Objetivos de Negocio
+
+- Captura geoespacial asistida por GPS y geocodificacion inversa mediante OpenStreetMap y Leaflet.
+- Orquestacion completa de logica transaccional en n8n a traves de Webhooks HTTP (`Workflow.json`).
+- Generacion automatica de codigos unicos de radicado para consulta publica.
+- Portal de seguimiento en tiempo real con indicador visual de avance (Radicado, En Evaluacion, Cuadrilla Asignada, Resuelto).
+- Notificaciones automaticas multicanal (correo electronico, mensajeria o integracion con hojas de calculo).
