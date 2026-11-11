@@ -237,3 +237,10 @@ Cada ejecucion se almacena en la base de datos de auditoria de n8n (`Executions`
 | El mapa no solicita permisos de ubicacion | El sitio se esta sirviendo por HTTP plano | Servir bajo HTTPS o `localhost` para cumplir politicas de seguridad del navegador. |
 | Error CORS al enviar el reporte | n8n no tiene habilitadas cabeceras CORS | Establecer variable `N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true` y permitir headers CORS en la configuracion de n8n. |
 | El radicado generado no aparece en seguimiento | Flujo n8n no persistio los datos en la base | Revisar la pestana de ejecuciones en la consola de n8n para comprobar en que nodo se interrumpio el flujo. |
+
+## Guia de Contribucion
+
+1. Realizar un Fork del repositorio.
+2. Crear una rama de funcionalidad (`git checkout -b feature/modulo-fotografias-adjuntas`).
+3. Registrar cambios aplicando Conventional Commits (`git commit -m 'feat: adicionar soporte para adjuntar fotos en el reporte'`).
+4. Publicar la rama y generar un Pull Request.
