@@ -196,3 +196,9 @@ Cuerpo de la peticion enviada al Webhook de n8n:
 - `api.js` implementa tiempos limite (timeouts) de conexion de 10 segundos.
 - Si n8n no responde o se encuentra apagado, la interfaz muestra un mensaje claro al usuario:
   *"No fue posible conectar con el centro de recepcion de incidentes. Por favor verifique su conexion o intente nuevamente."*
+
+## Estrategia de Pruebas y Aseguramiento de Calidad
+
+- Verificacion de ejecucion de Webhooks mediante pruebas con cURL y Postman.
+- Comprobacion de precision de marcadores en dispositivos moviles reales.
+- Validacion de flujos de n8n en modo de prueba (Execute Node by Node).
