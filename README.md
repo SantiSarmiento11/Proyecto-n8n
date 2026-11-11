@@ -210,3 +210,7 @@ curl -X POST http://localhost:5678/webhook/crear-reporte \
   -H "Content-Type: application/json" \
   -d '{"titulo": "Prueba de integracion", "categoria": "Vias", "latitud": 7.12, "longitud": -73.12}'
 ```
+
+## Registro de Ejecuciones en n8n
+
+Cada ejecucion se almacena en la base de datos de auditoria de n8n (`Executions`), permitiendo inspeccionar la entrada, salida y tiempo de procesamiento exacto de cada nodo para analisis forense y monitoreo continuo.
