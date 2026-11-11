@@ -19,3 +19,15 @@ La gestion eficiente de incidencias en espacios urbanos e instalaciones corporat
 - Generacion automatica de codigos unicos de radicado para consulta publica.
 - Portal de seguimiento en tiempo real con indicador visual de avance (Radicado, En Evaluacion, Cuadrilla Asignada, Resuelto).
 - Notificaciones automaticas multicanal (correo electronico, mensajeria o integracion con hojas de calculo).
+
+## Arquitectura del Sistema
+
+El sistema adopta una arquitectura desacoplada basada en eventos (EDA):
+1. Capa de Frontend Modular en Vanilla JS (`js/app/*.js`):
+   Encargada del manejo del mapa interactivo, captura de coordenadas y formularios de reporte.
+2. Capa de Integracion REST y Webhooks (`api.js`, `config.js`):
+   Despacha cargas utiles en formato JSON hacia el servicio de automatizacion.
+3. Capa de Orquestacion y Logica en n8n (`Workflow.json`):
+   Valida datos, asigna radicados, persiste registros y despacha alertas.
+4. Capa de Consulta y Seguimiento (`seguimiento.html`, `reporte.html`):
+   Permite a usuarios y administradores consultar el estado de cada solicitud.
