@@ -138,3 +138,13 @@ docker run -it --rm --name n8n -p 5678:5678 -v ~/.n8n:/home/node/.n8n n8nio/n8n
 2. Seleccionar la opcion **Workflows** -> **Import from File**.
 3. Seleccionar el archivo `Workflow.json` del repositorio.
 4. Activar el flujo (toggle a estado **Active**) y copiar las URLs de Webhook de produccion en `js/config.js`.
+
+### Ejecucion del Cliente Web
+
+Servir los archivos de la interfaz mediante un servidor HTTP local:
+```bash
+# Ejecutar desde la raiz del proyecto:
+python -m http.server 3000
+```
+
+Acceder a la aplicacion en: `http://localhost:3000`
