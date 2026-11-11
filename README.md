@@ -71,3 +71,7 @@ Proyecto-n8n/
         ├── tracking.js      # Consulta y renderizado de la linea de tiempo de seguimiento
         └── utils.js         # Funciones auxiliares de formateo y validacion
 ```
+
+## Stack Tecnologico
+
+Construido combinando la flexibilidad de JavaScript del lado del cliente con el poder de orquestacion de n8n.
