@@ -148,3 +148,14 @@ python -m http.server 3000
 ```
 
 Acceder a la aplicacion en: `http://localhost:3000`
+
+## Funcionamiento del Sistema
+
+El ciclo operativo contempla dos grandes caminos de usuario:
+1. **Radicacion de Incidente**:
+   - El usuario abre `reporte.html` y concede permisos de geolocalizacion.
+   - El mapa posiciona un marcador en su ubicacion y permite arrastrarlo para mayor precision.
+   - Diligencia titulo, categoria (vias, iluminacion, acueducto, aseo), descripcion y datos de contacto.
+   - Al enviar, se despacha la peticion HTTP a n8n, la cual retorna un codigo radicado (ej. `RAD-2026-9481`).
+2. **Seguimiento y Consulta**:
+   - El usuario ingresa a `seguimiento.html`, escribe su radicado y visualiza la linea de tiempo de atencion.
