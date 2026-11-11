@@ -81,3 +81,11 @@ Construido combinando la flexibilidad de JavaScript del lado del cliente con el 
 - ![n8n](https://img.shields.io/badge/n8n_Automation-EA4B71?style=for-the-badge&logo=n8n&logoColor=white) Motor de flujos de trabajo basado en nodos para integracion de servicios y datos.
 - ![JSON Webhooks](https://img.shields.io/badge/REST_Webhooks-02569B?style=for-the-badge&logo=postman&logoColor=white) Mecanismo asincrono de recepcion y respuesta de peticiones HTTP.
 - ![JSON](https://img.shields.io/badge/JSON_Payloads-000000?style=for-the-badge&logo=json&logoColor=white) Formato de serializacion para envio de coordenadas e informacion de incidencias.
+
+### Frontend, Cartografia y Visualizacion
+
+- ![JavaScript](https://img.shields.io/badge/JavaScript_ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) Modulos independientes sin empaquetadores externos.
+- ![OpenStreetMap](https://img.shields.io/badge/OpenStreetMap-7EBC6F?style=for-the-badge&logo=openstreetmap&logoColor=white) Proveedor de teselas geograficas y cartografia de codigo abierto.
+- ![Leaflet](https://img.shields.io/badge/Leaflet_Maps-199900?style=for-the-badge&logo=leaflet&logoColor=white) Biblioteca ligera para mapas interactivos y marcadores arrastrables.
+- ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) Formularios estructurados y soporte nativo de geolocalizacion.
+- ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) Variables de diseno y componentes modernos adaptativos.
