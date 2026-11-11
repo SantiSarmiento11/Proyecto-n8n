@@ -244,3 +244,7 @@ Cada ejecucion se almacena en la base de datos de auditoria de n8n (`Executions`
 2. Crear una rama de funcionalidad (`git checkout -b feature/modulo-fotografias-adjuntas`).
 3. Registrar cambios aplicando Conventional Commits (`git commit -m 'feat: adicionar soporte para adjuntar fotos en el reporte'`).
 4. Publicar la rama y generar un Pull Request.
+
+## Autoria y Creditos del Proyecto
+
+Desarrollado y mantenido por [Santiago Sarmiento](https://github.com/SantiSarmiento11) integrando tecnologias abiertas de mapas y automatizacion de procesos con n8n.
