@@ -190,3 +190,9 @@ Cuerpo de la peticion enviada al Webhook de n8n:
 | :--- | :--- | :--- | :--- |
 | `/webhook/crear-reporte` | `POST` | Objeto JSON con detalles e informe | `{"status": "success", "radicado": "RAD-2026-001"}` |
 | `/webhook/consultar-reporte` | `GET` | Query param `?radicado=RAD-...` | `{"radicado": "...", "estado": "En Proceso", ...}` |
+
+### Resiliencia ante Fallos de Red
+
+- `api.js` implementa tiempos limite (timeouts) de conexion de 10 segundos.
+- Si n8n no responde o se encuentra apagado, la interfaz muestra un mensaje claro al usuario:
+  *"No fue posible conectar con el centro de recepcion de incidentes. Por favor verifique su conexion o intente nuevamente."*
