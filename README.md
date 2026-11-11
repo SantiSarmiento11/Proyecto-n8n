@@ -183,3 +183,10 @@ Cuerpo de la peticion enviada al Webhook de n8n:
   "fechaReporte": "2026-11-11T12:00:00Z"
 }
 ```
+
+### Contratos de Endpoints n8n
+
+| Endpoint | Metodo | Parametros Entrada | Respuesta Exitosa |
+| :--- | :--- | :--- | :--- |
+| `/webhook/crear-reporte` | `POST` | Objeto JSON con detalles e informe | `{"status": "success", "radicado": "RAD-2026-001"}` |
+| `/webhook/consultar-reporte` | `GET` | Query param `?radicado=RAD-...` | `{"radicado": "...", "estado": "En Proceso", ...}` |
