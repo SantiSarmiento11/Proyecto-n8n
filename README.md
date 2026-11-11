@@ -165,3 +165,21 @@ El ciclo operativo contempla dos grandes caminos de usuario:
 - `index.html`: Pagina de bienvenida con acceso rapido a Reportar o Rastrear incidente.
 - `reporte.html`: Formulario con mapa interactivo y campos con validacion en tiempo real.
 - `seguimiento.html`: Barra de busqueda con renderizado dinamico del estado del ticket y mapa con el punto reportado.
+
+### Estructura de la Carga Util (Payload JSON)
+
+Cuerpo de la peticion enviada al Webhook de n8n:
+```json
+{
+  "titulo": "Falla en alumbrado publico",
+  "categoria": "Iluminacion",
+  "descripcion": "Luminaria intermitente en la esquina del parque principal",
+  "latitud": 7.119345,
+  "longitud": -73.122781,
+  "informante": {
+    "nombre": "Santiago Sarmiento",
+    "correo": "ciudadano@ejemplo.com"
+  },
+  "fechaReporte": "2026-11-11T12:00:00Z"
+}
+```
