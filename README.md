@@ -229,3 +229,11 @@ Cada ejecucion se almacena en la base de datos de auditoria de n8n (`Executions`
 
 - Modulo de Leaflet cargado de forma asincrona para acelerar el primer renderizado visual.
 - Uso de teselas cacheadas del mapa para minimizar el consumo de datos moviles de los usuarios en terreno.
+
+## Matriz de Resolucion de Incidencias
+
+| Problema | Causa Comun | Solucion |
+| :--- | :--- | :--- |
+| El mapa no solicita permisos de ubicacion | El sitio se esta sirviendo por HTTP plano | Servir bajo HTTPS o `localhost` para cumplir politicas de seguridad del navegador. |
+| Error CORS al enviar el reporte | n8n no tiene habilitadas cabeceras CORS | Establecer variable `N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true` y permitir headers CORS en la configuracion de n8n. |
+| El radicado generado no aparece en seguimiento | Flujo n8n no persistio los datos en la base | Revisar la pestana de ejecuciones en la consola de n8n para comprobar en que nodo se interrumpio el flujo. |
