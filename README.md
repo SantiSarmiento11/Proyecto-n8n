@@ -202,3 +202,11 @@ Cuerpo de la peticion enviada al Webhook de n8n:
 - Verificacion de ejecucion de Webhooks mediante pruebas con cURL y Postman.
 - Comprobacion de precision de marcadores en dispositivos moviles reales.
 - Validacion de flujos de n8n en modo de prueba (Execute Node by Node).
+
+### Prueba Rapida del Webhook mediante cURL
+
+```bash
+curl -X POST http://localhost:5678/webhook/crear-reporte \
+  -H "Content-Type: application/json" \
+  -d '{"titulo": "Prueba de integracion", "categoria": "Vias", "latitud": 7.12, "longitud": -73.12}'
+```
