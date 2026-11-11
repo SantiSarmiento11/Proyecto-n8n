@@ -89,3 +89,9 @@ Construido combinando la flexibilidad de JavaScript del lado del cliente con el 
 - ![Leaflet](https://img.shields.io/badge/Leaflet_Maps-199900?style=for-the-badge&logo=leaflet&logoColor=white) Biblioteca ligera para mapas interactivos y marcadores arrastrables.
 - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) Formularios estructurados y soporte nativo de geolocalizacion.
 - ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) Variables de diseno y componentes modernos adaptativos.
+
+### Servicios y Proveedores Externos
+
+- **OpenStreetMap Tile Layer**: Cartografia satelital y urbana de libre uso sin cuotas de facturacion.
+- **Browser Geolocation API**: Solicitud de coordenadas directas mediante antena GPS del dispositivo movil o red Wi-Fi.
+- **SMTP Email Service (n8n Node)**: Envio instantaneo de confirmacion de radicacion al usuario informante.
