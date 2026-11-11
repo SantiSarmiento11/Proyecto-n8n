@@ -159,3 +159,9 @@ El ciclo operativo contempla dos grandes caminos de usuario:
    - Al enviar, se despacha la peticion HTTP a n8n, la cual retorna un codigo radicado (ej. `RAD-2026-9481`).
 2. **Seguimiento y Consulta**:
    - El usuario ingresa a `seguimiento.html`, escribe su radicado y visualiza la linea de tiempo de atencion.
+
+### Vistas y Navegacion
+
+- `index.html`: Pagina de bienvenida con acceso rapido a Reportar o Rastrear incidente.
+- `reporte.html`: Formulario con mapa interactivo y campos con validacion en tiempo real.
+- `seguimiento.html`: Barra de busqueda con renderizado dinamico del estado del ticket y mapa con el punto reportado.
