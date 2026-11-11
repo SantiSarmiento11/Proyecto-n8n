@@ -31,3 +31,19 @@ El sistema adopta una arquitectura desacoplada basada en eventos (EDA):
    Valida datos, asigna radicados, persiste registros y despacha alertas.
 4. Capa de Consulta y Seguimiento (`seguimiento.html`, `reporte.html`):
    Permite a usuarios y administradores consultar el estado de cada solicitud.
+
+### Diagrama de Flujo Arquitectonico
+
+```mermaid
+flowchart TD
+    A[Ciudadano / Usuario Web] -->|Ubicacion GPS + Formulario| B[Portal Web index.html / reporte.html]
+    B --> C[Modulo de Mapa Leaflet map.js]
+    B --> D[Modulo API Cliente api.js]
+    D -->|POST JSON Payload| E[n8n Webhook Trigger]
+    E --> F[Nodo n8n Validacion y Asignacion de Radicado]
+    F --> G[(Almacenamiento Persistente / Hojas / BD)]
+    F --> H[Nodo de Notificacion por Correo]
+    I[Usuario Consultante] -->|Ingreso de Codigo Radicado| J[Portal seguimiento.html]
+    J -->|GET Consulta Estado| E
+    E --> J
+```
